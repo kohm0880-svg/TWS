@@ -1,16 +1,19 @@
 {
   "name": "three-word-story",
-  "version": "0.2.0",
+  "version": "0.6.0",
   "private": true,
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "test:ko": "node scripts/check-korean-dictionary.js"
   },
   "dependencies": {
     "ws": "^8.18.0",
-    "wordlist-english": "^1.2.1"
+    "wordlist-english": "^1.2.1",
+    "nspell": "^2.1.5",
+    "dictionary-ko": "^2.0.0"
   }
 }
